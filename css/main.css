@@ -158,9 +158,6 @@ body {
 
 /* Section */
 
-.heroo {
-}
-
 .heroo-content-container {
     display: flex;
     align-items: center;
@@ -213,9 +210,6 @@ body {
 }
 
 /* Footer */
-
-.footer-gallery-main {
-}
 
 .footer-gallery-main-container {
     display: grid;
