@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Global */
 
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
 
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -13,10 +21,16 @@ html {
 body {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
     font-family: "Open Sans", sans-serif;
+    background-image: url(../images/topography.svg), -o-linear-gradient(340deg, #f93d66, #6d47d9);
     background-image: url(../images/topography.svg), linear-gradient(110deg, #f93d66, #6d47d9);
     background-size: 340px, auto;
 }
@@ -44,7 +58,11 @@ body {
 }
 
 .sitenav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -68,6 +86,8 @@ body {
 /* Main */
 
 .main-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
@@ -76,6 +96,8 @@ body {
 }
 
 .hero-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -97,6 +119,8 @@ body {
     height: 400px;
     list-style: none;
     padding: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 100px 0px 0px 40px;
 }
@@ -159,7 +183,11 @@ body {
 /* Section */
 
 .heroo-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
 }
@@ -212,6 +240,7 @@ body {
 /* Footer */
 
 .footer-gallery-main-container {
+    display: -ms-grid;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -219,9 +248,13 @@ body {
 
 .footer-gallery-main h2 {
     grid-column: 1 / -1;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px auto 20px 1fr;
     grid-template-columns: 1fr auto 1fr;
     grid-gap: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -230,6 +263,8 @@ body {
     content: "";
     width: 5px;
     height: 10px;
+    background: -webkit-gradient(linear, , from(var(--yellow)), to(transparent));
+    background: -o-linear-gradient(var(--direction, left), var(--yellow), transparent);
     background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
 }
 
@@ -238,6 +273,8 @@ body {
     content: "";
     width: 5px;
     height: 10px;
+    background: -webkit-gradient(linear, , from(var(--yellow)), to(transparent));
+    background: -o-linear-gradient(var(--direction, left), var(--yellow), transparent);
     background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
 }
 
